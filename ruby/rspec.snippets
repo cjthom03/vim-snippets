@@ -7,3 +7,8 @@ abbr        RSpec.describe
 			${0}
 		end
 	end
+
+snippet     expect_rwr
+abbr        expect receive with return
+options     head
+	expect(${1:#:object}).to receive(${2:#:message}).with({$3:#:args}).and_return(${4:#:value})
