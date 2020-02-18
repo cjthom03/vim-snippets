@@ -3,7 +3,7 @@ abbr        RSpec.describe
   require 'rails_helper'
 
 	Rspec.describe ${1:#:described_class}, type: ${2::helper} do
-		describe ${3:#:#method_name} do
+		describe '${3:#:#method_name}' do
 			${0}
 		end
 	end
@@ -11,4 +11,4 @@ abbr        RSpec.describe
 snippet     expect_rwr
 abbr        expect receive with return
 options     head
-	expect(${1:#:object}).to receive(${2:#:message}).with({$3:#:args}).and_return(${4:#:value})
+	expect(${1:#:object}).to receive(${2:#:message}).with(${3:#:args}).and_return(${4:#:value})
