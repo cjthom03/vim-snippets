@@ -2,7 +2,7 @@ snippet     rspec
 abbr        RSpec.describe
   require 'rails_helper'
 
-	Rspec.describe ${1:#:described_class}, type: ${2::helper} do
+	RSpec.describe ${1:#:described_class}, type: ${2::helper} do
 		describe '${3:#:#method_name}' do
 			${0}
 		end
